@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="page-outline">
+            <div class="page-header">
+                <div class="page-logo">Address Book</div>
+            </div>
+            <div class="nav-bar">
+                <ul class="nav-contents">
+                    <li class="nav-item">Home</li>
+                    <li class="nav-item" ><input type="button" id="nav-add" value="+Add"></li>
+                    </ul>
+                <img class="blog-icon" src="img/blog-icon.png" alter="blog-icon" width="20px" height="20px">
+                
+            </div>
+            <div class="main-content">
+                <div id="Left"class="left">
+                    
+                    <table id="table">
+                        <th id="table-heading">CONTACTS</th>
+                    </table>
+                    <p id="nothing">No Contacts to display</p>
+                </div>
+                <div class="right" id="Right">
+                    <div id="contact-info-block">
+                        <div id="id" class="curr-index"></div>
+                        <div id="edit-line">
+                            <h1 class="info-block">
+                                NAME goes here
+                            </h1>
+                            <div>
+                                <img src="img/edit.png" style="width:15px;height:15px" alt="edit"><input type="button" id="edit" value="EDIT">
+                                <img src="img/delete.png" style="margin-left:30px"  alt="delete"><input type="button" id="delete" value="DELETE">
+                            </div>
+                        </div>
+                        
+                        <p>Email: <span class="info-block"></span></p>
+                        <p>Mobile: <span class="info-block"></span></p>
+                        <p>Landline: <span class="info-block"></span></p>
+                        <p>Website: <span class="info-block"></span></p>
+                        <p>Address: <span class="info-block"></span></p>
+ 
+                    </div>
+                    <form id="form-id">
+                        <div class="name-block">
+                            <label class="lab"  for="name">Name</label><span class="red">*</span><br>
+                            <input class="details" id="name" name="name">
+                        </div>
+                        <div class="mail-block">
+                            <label class="lab" for="email">Email</label><span class="red">*</span><br>
+                            <input class="details" id="email" name="email">
+                        </div>
+                        <div class="Contact-block">
+                            <div class="phone-block">
+                                <label class="lab" for="phone">Phone</label><span class="red">*</span><br>
+                                <input type="number" class="details" id="phone" name="phone">
+                            </div>
+                            <div class="landline-block">
+                                <label class="lab" for="landline">Landline</label><br>
+                                <input type='number' class="details" id="landline" name="landline">
+                            </div>
+                        </div>
+                        <div class="website">
+                            <label class="lab" for="website">Website</label><br>
+                            <input class="details" id="website" name="website">
+                        </div>
+                        <div class="address">
+                            <label class="lab" for="address">Address</label><br>
+                            <input class="details" id="address" name="address">
+                        </div>
+                        <span id="note">(click cancel to exit the form.)</span>
+                        <input type="button" id="cancel-button" value="Cancel">
+                        <input type="button" id="add-button" value="Add">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </body>
+    <script src="scripts/main.js"></script>
+</html>

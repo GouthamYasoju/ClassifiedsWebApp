@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="page-outline">
+            <div class="page-header">
+                <div class="page-logo">Technovert</div>
+            </div>
+            <div class="nav-bar">
+                <ul class="nav-contents">
+                    <li class="nav-item" ><a id="home" class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item" ><a id="services" class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item" ><a id="career" class="nav-link" href="careers.html">Careers</a></li>
+                    <li class="nav-item" ><a id="contact" class="nav-link  cont" href="contact.html">Contact</a></li></ul>
+                <img class="blog-icon" src="img/blog-icon.png" alter="blog-icon" width="20px" height="20px">
+            </div>
+            
+            <form class="contact-form" id="form_id">
+                <h3 class="notify" id="notify">Please fill all the required fields</h3>
+                <div class="line">
+                <label class="label" for="name" >
+                    My Name
+                </label>
+                <input class="contact-entry-slot star" type="text" id="name" name="name" ><a id="name-r" class="required" >Name is required</a><span id="str" class="required">*</span>
+                </div>
+                <div class="gender radio line">
+                    <div class="left label" for="contact-mode" >
+                        My Gender:
+                    </div>
+                    <div >
+                    <input class="dot" type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input class="dot" type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    </div>
+                </div>
+                <div class="line">
+                <label class="label" for="email" >
+                    My Email
+                </label>
+                <input class="contact-entry-slot" type="text" id="email" name="email"><a id="email-r" class="required">*</a>  
+                </div>
+                <div class="line">
+                <label class="label" for="tele" >
+                    My Telephone Number
+                </label>
+                <input class="contact-entry-slot" type="number" id="tele" name="tele"><br><a id="tele-r" class="required"></a>
+                </div>
+                <div class="line">
+                    <label class="label" for="org" >
+                        My Organization Name
+                    </label>
+                    <input class="contact-entry-slot" type="text" id="org" name="org"><a class=" required" id="org-r">*</a>
+                </div>
+                <div class="line">
+                    <label class="label" for="city" >
+                        My City
+                    </label>
+                    <input class="contact-entry-slot" type="text" id="city" name="city"><br>
+                </div>
+                <div class="line">
+                    <label class="label" for="state" >
+                        My State or Province
+                    </label>
+                    <select class="drop-down contact-entry-slot" ty
+                    pe="select" id="state" name="state"  >
+                        <option value=" ">Select a state</option>
+                        
+                    </select>
+                    </div>
+                <div class="radio line">
+                    <div class="left label" for="contact-mode" >
+                        Please Contact Me By:
+                    </div>
+                    <div >
+                    <input class="dot" type="radio" id="email" name="contact" value="Email">
+                    <label for="html">Email</label><br>
+                    <input class="dot" type="radio" id="Phone" name="contact" value="Phone">
+                    <label for="css">Phone</label><br>
+                    <input class="dot" type="radio" id="both" name="contact" value="Both">
+                    <label for="both">Both</label>
+                    </div>
+                </div>
+                <div class="line">
+                    <label class="label" for="Promo-code" >
+                        Promotion Code
+                    </label>
+                    <input class="contact-entry-slot" type="text" id="promo-code" name="promo-code"><br>
+                </div>
+                <div class="line">
+                    <label class="label" for="optional" >
+                        Optional Information
+                    </label><br>
+                    <p class="info">This information is optional but it help us to serve you better.</p>
+                    
+                </div>
+                <div class="line">
+                    <label class="label" for="web-add" >
+                        My Website Adress is:
+                    </label>
+                    <input class="contact-entry-slot" type="text" id="web-add" name="web-add"><br>
+                </div>
+                <div class="line">
+                    <label class="label" for="about-org" >
+                        Tell Us More About Your Organization:
+                    </label><br><br>
+                    <textarea id="about-org" rows="7" cols="40"></textarea><br><br>
+                <div class="line">
+                    <label class="label" for="like-to" >
+                        What I'd really like to know is:
+                    </label><br><br>
+                    <textarea id="like-to" rows="7" cols="40"></textarea>
+                   
+                </div>
+                
+                
+                
+                <input class="submit" type="button" id="submit" value="Send Message">
+                <input class="reset submit" id="reset" type="button" value="Clear Form" >
+                            
+            </form>
+        </div>
+        <script src="/js/jq.js"></script>
+        <script src="/js/contactjquery.js"></script>
+    </body>
+</html>
